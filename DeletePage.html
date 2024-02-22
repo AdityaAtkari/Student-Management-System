@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Page</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .deletebuttons {
+            height: 180px;
+            width: 40%;
+            background-color: #E6E6FA; /* Light Blue */
+            margin-top: 5%;
+            margin-left: 27%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        form {
+            text-align: center;
+        }
+
+        table {
+            margin: 10px auto;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 200px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #3498db; /* Focus color - Light Blue */
+        }
+
+        button {
+            background-color: #720e9e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #4d0b6e;
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="deletebuttons">
+        <form action="http://localhost:8888/MyWebProject/JspExample/DeletePage.jsp" method="post">
+            <table>
+                <tr>
+                    <td>Roll</td>
+                    <td><input type="text" name="roll" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit">Delete</button>
+                        <button type="button"><a href="http://localhost:8888/MyWebProject/JspExample/HomePage.html">Home</a></button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

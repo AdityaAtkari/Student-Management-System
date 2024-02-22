@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<style>
+	.one{
+		height: 180px;
+		width: 40%;
+		background-color: deepskyblue;
+		margin-top: 5%;
+		margin-left: 25%;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		
+		}
+</style>
+</head>
+<body>
+<div class="one">
+<form action="http://localhost:8888/MyWebProject/JspExample/HomePage.html" method="post">
+<table align="center" border="0px" height="50px" width="40px">
+	<caption><font color="red">Either user name or password is incorrect . Try Again!</font></caption>
+		<tr>
+			<td>Userid</td>
+			<td><input type="textfield" size="20px"  name="user"></td>
+		</tr>
+	
+	<tr>
+		<td>Password</td>
+		<td><input  size="20px" type="password" name="pass"></td>
+		
+	</tr>
+	<tr>
+	<td colspan="2" align="center"><input type="submit" value="login"></input><input type="button" value="Exit"></input></td>
+	</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
