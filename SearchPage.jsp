@@ -56,7 +56,7 @@ response.setContentType("text/html");
 			    out.println("<div class='searchbuttons'>");
 			    
 			    out.println("<table align='center'>");
-			    out.println("<form action='http://localhost:8888/MyWebProject/JspExample/UpdatePage.jsp' method='post'>");
+			    out.println("<form action='UpdatePage.jsp' method='post'>");
 			    out.println("<tr>");
 			    out.println("<td>Roll no</td>");
 			    out.println("<td><input type='textfield' size='20px' name='roll' value="+roll+"></td>");
@@ -76,7 +76,7 @@ response.setContentType("text/html");
 			   // out.println("</form>");
 			    out.println("<td><button type='submit'>Update</button> </td>");
 			    out.println("</form>");
-			    out.println("<form action='http://localhost:8888/MyWebProject/JspExapmle/HomePage.html'>");
+			    out.println("<form action='HomePage.html'>");
 			    out.println("<td><button type='button'>Home</button></td>");
 			    out.println("</form>");
 			    out.println("</tr>");
